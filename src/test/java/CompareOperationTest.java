@@ -2,16 +2,72 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class CompareOperationTest {
-    @Test
-    public void testAddingByZeroDoesNothing(){
-        //Arrange
-        Comparador io = new Comparador();
-        //Act
-        int r = io.compararArea(new Circulo(2.0, 3.0), new Cuadrado(4.0, 5.0));
-        int r2 = io.compararPerimetros(new Circulo(2.0, 3.0), new Cuadrado(4.0, 5.0));
+    private Comparador comparador = new Comparador();
 
-        //Assert
-        Assertions.assertEquals(1, r);
+    @Test
+    public void ifFirstFigureAreaIsGreaterThanSecondOneReturnOne() {
+        //Arrange
+        Circulo circulo = new Circulo(10);
+        Rectangulo rectangulo = new Rectangulo(10, 20);
+        //Act
+        int result = comparador.compararArea(circulo, rectangulo);
+        //Asserts
+        Assertions.assertEquals(1, result);
+    }
+
+    @Test
+    public void ifFirstFigureAreaIsLowerThanSecondOneReturnNegativeOne() {
+        //Arrange
+        Rectangulo rectangulo = new Rectangulo(10, 20);
+        Cuadrado cuadrado = new Cuadrado(40);
+        //Act
+        int result = comparador.compararArea(rectangulo, cuadrado);
+        //Asserts
+        Assertions.assertEquals(-1, result);
+    }
+
+    @Test
+    public void ifFirstFigurePerimeterIsGreaterThanSecondOneReturnOne() {
+        //Arrange
+        Circulo circulo = new Circulo(10);
+        Rectangulo rectangulo = new Rectangulo(10, 20);
+        //Act
+        int result = comparador.compararPerimetros(circulo, rectangulo);
+        //Asserts
+        Assertions.assertEquals(1, result);
+    }
+
+    @Test
+    public void ifFirstFigurePerimeterIsLowerThanSecondOneReturnIntegerNegativeOne() {
+        //Arrange
+        Rectangulo rectangulo = new Rectangulo(10, 20);
+        Cuadrado cuadrado = new Cuadrado(40);
+        //Act
+        int result = comparador.compararPerimetros(rectangulo, cuadrado);
+        //Asserts
+        Assertions.assertEquals(-1, result);
+    }
+
+    @Test
+    public void ifFirstFigureAreaIsEqualToSecondOneReturnZero() {
+        //Arrange
+        Rectangulo rectangulo = new Rectangulo(800, 2);
+        Cuadrado cuadrado = new Cuadrado(40);
+        //Act
+        int result = comparador.compararArea(rectangulo, cuadrado);
+        //Asserts
+        Assertions.assertEquals(0, result);
+    }
+
+    @Test
+    public void ifFirstFigurePerimeterIsEqualToSecondOneItShouldReturnIntegerZero() {
+        //Arrange
+        Rectangulo rectangulo = new Rectangulo(40, 40);
+        Cuadrado cuadrado = new Cuadrado(40);
+        //Act
+        int result = comparador.compararPerimetros(rectangulo, cuadrado);
+        //Asserts
+        Assertions.assertEquals(0, result);
     }
 
 }
