@@ -1,7 +1,21 @@
 public class Circulo extends Figura{
-    public Circulo(double area, double perimetro) {
+    private Double radio;
+    public Circulo(double radio) {
         super();
-        this.area = area;
-        this.perimetro = perimetro;
+        if(radio > 0) this.radio = radio;
+        else try {
+            throw new FigureElementNegativeException("Circle's radius cannot be a negative number");
+        } catch (FigureElementNegativeException e) {
+            e.printStackTrace();
+        }
+    }
+    @Override
+    public double getArea() {
+        return Math.PI * (Math.pow(radio, 2));
+    }
+
+    @Override
+    public double getPerimetro() {
+        return 2 * Math.PI * radio;
     }
 }
