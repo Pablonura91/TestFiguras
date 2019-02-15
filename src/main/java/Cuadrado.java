@@ -1,26 +1,22 @@
 public class Cuadrado extends Figura {
-    private double base;
-    private double altura;
+    private Double base;
 
-    public Cuadrado(double base, double altura) {
-        super();
-        if (base > 0 && altura > 0) {
-            this.base = base;
-            this.altura = altura;
-        }
+    public Cuadrado(double base) {
+        if (base > 0) this.base = base;
         else try {
-            throw new FigureElementNegativeException("You cannot have a negative base or altura in a rectangle");
+            throw new FigureElementNegativeException("Square's base cannot be a negative number");
         } catch (FigureElementNegativeException e) {
             e.printStackTrace();
         }
     }
+
     @Override
     public double getArea() {
-        return base * altura;
+        return Math.pow(base, 2);
     }
 
     @Override
     public double getPerimetro() {
-        return 2 * (base + altura);
+        return base * 4;
     }
 }
