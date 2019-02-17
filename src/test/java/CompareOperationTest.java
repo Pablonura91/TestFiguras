@@ -5,7 +5,7 @@ public class CompareOperationTest {
     private Comparador comparador = new Comparador();
 
     @Test
-    public void ifFirstFigureAreaIsGreaterThanSecondOneReturnOne() {
+    public void ifFirstFigureAreaIsGreaterThanSecondOneReturnOne() throws FigureElementNegativeException {
         //Arrange
         Circulo circulo = new Circulo(10);
         Rectangulo rectangulo = new Rectangulo(10, 20);
@@ -16,7 +16,7 @@ public class CompareOperationTest {
     }
 
     @Test
-    public void ifFirstFigureAreaIsLowerThanSecondOneReturnNegativeOne() {
+    public void ifFirstFigureAreaIsLowerThanSecondOneReturnNegativeOne() throws FigureElementNegativeException {
         //Arrange
         Rectangulo rectangulo = new Rectangulo(10, 20);
         Cuadrado cuadrado = new Cuadrado(40);
@@ -27,7 +27,7 @@ public class CompareOperationTest {
     }
 
     @Test
-    public void ifFirstFigurePerimeterIsGreaterThanSecondOneReturnOne() {
+    public void ifFirstFigurePerimeterIsGreaterThanSecondOneReturnOne() throws FigureElementNegativeException {
         //Arrange
         Circulo circulo = new Circulo(10);
         Rectangulo rectangulo = new Rectangulo(10, 20);
@@ -38,7 +38,7 @@ public class CompareOperationTest {
     }
 
     @Test
-    public void ifFirstFigurePerimeterIsLowerThanSecondOneReturnIntegerNegativeOne() {
+    public void ifFirstFigurePerimeterIsLowerThanSecondOneReturnIntegerNegativeOne() throws FigureElementNegativeException {
         //Arrange
         Rectangulo rectangulo = new Rectangulo(10, 20);
         Cuadrado cuadrado = new Cuadrado(40);
@@ -49,7 +49,7 @@ public class CompareOperationTest {
     }
 
     @Test
-    public void ifFirstFigureAreaIsEqualToSecondOneReturnZero() {
+    public void ifFirstFigureAreaIsEqualToSecondOneReturnZero() throws FigureElementNegativeException {
         //Arrange
         Rectangulo rectangulo = new Rectangulo(800, 2);
         Cuadrado cuadrado = new Cuadrado(40);
@@ -60,7 +60,7 @@ public class CompareOperationTest {
     }
 
     @Test
-    public void ifFirstFigurePerimeterIsEqualToSecondOneItShouldReturnIntegerZero() {
+    public void ifFirstFigurePerimeterIsEqualToSecondOneItShouldReturnIntegerZero() throws FigureElementNegativeException {
         //Arrange
         Rectangulo rectangulo = new Rectangulo(40, 40);
         Cuadrado cuadrado = new Cuadrado(40);
