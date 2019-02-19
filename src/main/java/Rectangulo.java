@@ -1,4 +1,4 @@
-public class Rectangulo extends Figura{
+public class Rectangulo implements Figura {
     private double base;
     private double altura;
 
@@ -12,13 +12,10 @@ public class Rectangulo extends Figura{
         }
     }
 
-
-    @Override
     public double getArea() {
         return base * altura;
     }
 
-    @Override
     public double getPerimetro() {
         return 2 * (base + altura);
     }

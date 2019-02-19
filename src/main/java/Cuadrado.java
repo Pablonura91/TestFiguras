@@ -1,4 +1,4 @@
-public class Cuadrado extends Figura {
+public class Cuadrado implements Figura {
     private Double base;
 
     public Cuadrado(double base) throws FigureElementNegativeException {
@@ -8,12 +8,10 @@ public class Cuadrado extends Figura {
         }
     }
 
-    @Override
     public double getArea() {
         return Math.pow(base, 2);
     }
 
-    @Override
     public double getPerimetro() {
         return base * 4;
     }

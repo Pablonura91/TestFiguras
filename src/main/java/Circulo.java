@@ -1,4 +1,4 @@
-public class Circulo extends Figura{
+public class Circulo implements Figura {
     private Double radio;
     
     public Circulo(double radio) throws FigureElementNegativeException {
@@ -8,12 +8,10 @@ public class Circulo extends Figura{
         }
     }
 
-    @Override
     public double getArea() {
         return Math.PI * (Math.pow(radio, 2));
     }
 
-    @Override
     public double getPerimetro() {
         return 2 * Math.PI * radio;
     }
