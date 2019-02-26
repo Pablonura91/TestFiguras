@@ -1,18 +1,21 @@
 public class Cuadrado implements Figura {
     private Double base;
 
-    public Cuadrado(double base) throws FigureElementNegativeException {
-        if (base > 0) this.base = base;
-        else {
-            throw new FigureElementNegativeException("Cuadrado's base cannot be a negative number");
-        }
+    public Cuadrado(double base) {
+        if (base <= 0) throw new IllegalArgumentException("");
+        this.base = base;
+
     }
 
     public double getArea() {
-        return Math.pow(base, 2);
+        double area = Math.pow(base, 2);
+        if (area == Double.POSITIVE_INFINITY) throw new ArithmeticException("Double Overflow");
+        return area;
     }
 
     public double getPerimetro() {
-        return base * 4;
+        double perimeter = base * 4;
+        if (perimeter == Double.POSITIVE_INFINITY) throw new ArithmeticException("Double Overflow");
+        return perimeter;
     }
 }

@@ -4,38 +4,65 @@ import org.junit.jupiter.api.Test;
 public class CirculoTest {
 
     @Test
-    public void havingCircleRadiusNegativeThrowsAFigureElementNegativeException() {
+    public void havingCircleRadiusNegativeOrEqualToZeroThrowsAnIllegalArgumentException() {
         //Arrange
-        double radius = -1.0;
+        double radius = 0.0;
         try {
             //Act
-            Circulo circle = new Circulo(radius);
+            Circulo circulo = new Circulo(radius);
             //Assert
-            Assertions.fail("Figure Element Negative Exception not thrown");
-        } catch (FigureElementNegativeException ignored) {}
+            Assertions.fail("Radius 0 doesn't throw exception.");
+        } catch (IllegalArgumentException ignored) {}
     }
 
 
     @Test
-    public void calculateAreaWithPositiveRadiusOk() throws FigureElementNegativeException {
+    public void calculateAreaWithPositiveRadiusOk() {
         //Arrange
-        double radius = 5.0;
+        double radius = 2.0;
         //Act
-        Circulo circle = new Circulo(radius);
-        double result = circle.getArea();
+        Circulo circulo = new Circulo(radius);
+        double result = circulo.getArea();
         //Asserts
-        Assertions.assertEquals(78.53981633974483, result, 0.01);
+        Assertions.assertEquals(12.566370614359172, result, 0.01);
     }
 
     @Test
-    public void calculatePerimeterWithPositiveRadiusOk() throws FigureElementNegativeException {
+    public void calculatePerimeterWithPositiveRadiusOk() {
         //Arrange
-        double radius = 5.0;
+        double radius = 2.0;
         //Act
-        Circulo circle = new Circulo(radius);
-        double result = circle.getPerimetro();
+        Circulo circulo = new Circulo(radius);
+        double result = circulo.getPerimetro();
         //Asserts
-        Assertions.assertEquals(31.41592653589793, result, 0.01);
+        Assertions.assertEquals(12.566370614359172, result, 0.01);
     }
+
+    @Test
+    public void testOverrideArea() {
+        //Arrange
+        double radius = Double.MAX_VALUE;
+        try {
+            //Act
+            Circulo circulo = new Circulo(radius);
+            double result = circulo.getArea();
+            //Assertions
+            Assertions.fail("Radius Maxim double value doesn't throw exception");
+        }catch(ArithmeticException ignored) {}
+    }
+
+    @Test
+    public void testOverridePerimeter() {
+        //Arrange
+        double radius = Double.MAX_VALUE;
+        try {
+            //Act
+            Circulo circulo = new Circulo(radius);
+            double result = circulo.getPerimetro();
+            //Assertions
+            Assertions.fail("Radius Maxim double value doesn't throw exception");
+        }catch(ArithmeticException ignored) {}
+    }
+
 
 }

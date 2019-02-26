@@ -1,73 +1,101 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
+
 public class CompareOperationTest {
-    private Comparador comparador = new Comparador();
-
     @Test
-    public void ifFirstFigureAreaIsGreaterThanSecondOneReturnOne() throws FigureElementNegativeException {
+    public void ifFirstFigureAreaIsGreaterThanSecondOneReturnNumberGreaterThanZero() {
         //Arrange
-        Circulo circulo = new Circulo(10);
-        Rectangulo rectangulo = new Rectangulo(10, 20);
+        Figura s1 = mock(Figura.class);
+        Figura s2 = mock(Figura.class);
+
+        when(s1.getArea()).thenReturn(10.0);
+        when(s2.getArea()).thenReturn(1.0);
+
         //Act
-        int result = comparador.compararArea(circulo, rectangulo);
+        double value = Comparador.compararArea(s1,s2);
         //Asserts
-        Assertions.assertEquals(1, result);
+        Assertions.assertTrue(value > 0);
     }
 
     @Test
-    public void ifFirstFigureAreaIsLowerThanSecondOneReturnNegativeOne() throws FigureElementNegativeException {
+    public void ifFirstFigureAreaIsLowerThanSecondOneReturnNumberNegative() {
         //Arrange
-        Rectangulo rectangulo = new Rectangulo(10, 20);
-        Cuadrado cuadrado = new Cuadrado(40);
+        Figura s1 = mock(Figura.class);
+        Figura s2 = mock(Figura.class);
+
+        when(s1.getArea()).thenReturn(1.0);
+        when(s2.getArea()).thenReturn(10.0);
+
         //Act
-        int result = comparador.compararArea(rectangulo, cuadrado);
+        double value = Comparador.compararArea(s1,s2);
         //Asserts
-        Assertions.assertEquals(-1, result);
+        Assertions.assertTrue(value < 0);
+    }
+
+
+    @Test
+    public void ifFirstFigureAreaIsEqualToSecondOneReturnZero() {
+        //Arrange
+        Figura s1 = mock(Figura.class);
+        Figura s2 = mock(Figura.class);
+
+        when(s1.getArea()).thenReturn(10.0);
+        when(s2.getArea()).thenReturn(10.0);
+
+        //Act
+        double value = Comparador.compararArea(s1,s2);
+        //Asserts
+        Assertions.assertTrue(value == 0);
+    }
+
+
+    @Test
+    public void ifFirstFigurePerimeterIsGreaterThanSecondOneReturnNumberGreaterThanZero()  {
+        //Arrange
+        Figura s1 = mock(Figura.class);
+        Figura s2 = mock(Figura.class);
+
+        when(s1.getPerimetro()).thenReturn(10.0);
+        when(s2.getPerimetro()).thenReturn(1.0);
+
+        //Act
+        double value = Comparador.compararPerimetro(s1,s2);
+        //Asserts
+        Assertions.assertTrue(value > 0);
     }
 
     @Test
-    public void ifFirstFigurePerimeterIsGreaterThanSecondOneReturnOne() throws FigureElementNegativeException {
+    public void ifFirstFigurePerimeterIsLowerThanSecondOneReturnNegativeNumber() {
         //Arrange
-        Circulo circulo = new Circulo(10);
-        Rectangulo rectangulo = new Rectangulo(10, 20);
+        Figura s1 = mock(Figura.class);
+        Figura s2 = mock(Figura.class);
+
+        when(s1.getPerimetro()).thenReturn(1.0);
+        when(s2.getPerimetro()).thenReturn(10.0);
+
         //Act
-        int result = comparador.compararPerimetros(circulo, rectangulo);
+        double value = Comparador.compararPerimetro(s1,s2);
+
         //Asserts
-        Assertions.assertEquals(1, result);
+        Assertions.assertTrue(value < 0);
     }
+
 
     @Test
-    public void ifFirstFigurePerimeterIsLowerThanSecondOneReturnIntegerNegativeOne() throws FigureElementNegativeException {
+    public void ifFirstFigurePerimeterIsEqualToSecondOneReturnNumberZero() {
         //Arrange
-        Rectangulo rectangulo = new Rectangulo(10, 20);
-        Cuadrado cuadrado = new Cuadrado(40);
-        //Act
-        int result = comparador.compararPerimetros(rectangulo, cuadrado);
-        //Asserts
-        Assertions.assertEquals(-1, result);
-    }
+        Figura s1 = mock(Figura.class);
+        Figura s2 = mock(Figura.class);
 
-    @Test
-    public void ifFirstFigureAreaIsEqualToSecondOneReturnZero() throws FigureElementNegativeException {
-        //Arrange
-        Rectangulo rectangulo = new Rectangulo(800, 2);
-        Cuadrado cuadrado = new Cuadrado(40);
-        //Act
-        int result = comparador.compararArea(rectangulo, cuadrado);
-        //Asserts
-        Assertions.assertEquals(0, result);
-    }
+        when(s1.getPerimetro()).thenReturn(10.0);
+        when(s2.getPerimetro()).thenReturn(10.0);
 
-    @Test
-    public void ifFirstFigurePerimeterIsEqualToSecondOneItShouldReturnIntegerZero() throws FigureElementNegativeException {
-        //Arrange
-        Rectangulo rectangulo = new Rectangulo(40, 40);
-        Cuadrado cuadrado = new Cuadrado(40);
         //Act
-        int result = comparador.compararPerimetros(rectangulo, cuadrado);
+        double value = Comparador.compararPerimetro(s1,s2);
         //Asserts
-        Assertions.assertEquals(0, result);
+        Assertions.assertTrue(value == 0);
     }
-
 }

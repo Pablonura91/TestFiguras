@@ -1,25 +1,11 @@
-public class Comparador {
+import java.awt.*;
 
-    public int compararArea(Figura figura1, Figura figura2){
-        if (figura1.getArea() > figura2.getArea()){
-            return -2;
-        }
-        if (figura2.getArea() > figura1.getArea()){
-            return 1;
-        }
-        else {
-            return 0;
-        }
+public class Comparador {
+    public static double compararArea(Figura figura1, Figura figura2) {
+        return figura1.getArea() - figura2.getArea();
     }
-    public int compararPerimetros(Figura figura1, Figura figura2){
-        if (figura1.getPerimetro() > figura2.getPerimetro()){
-            return -2;
-        }
-        if (figura2.getPerimetro() > figura1.getPerimetro()){
-            return 1;
-        }
-        else {
-            return 0;
-        }
+
+    public static double compararPerimetro(Figura figura1, Figura figura2) {
+        return figura1.getPerimetro() - figura2.getPerimetro();
     }
 }
