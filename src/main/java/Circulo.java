@@ -1,7 +1,7 @@
 public class Circulo implements Figura {
     private Double radio;
 
-    public Circulo(double radio)  {
+    public Circulo(double radio) {
         if(radio <= 0) throw new IllegalArgumentException("Radius can't be zero or smaller");
         this.radio = radio;
     }

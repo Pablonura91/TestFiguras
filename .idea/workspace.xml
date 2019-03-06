@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31a16e43-70c1-46db-8c48-691bb81f425b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Circulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Circulo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Comparador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Comparador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cuadrado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cuadrado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Rectangulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Rectangulo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CirculoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CirculoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CompareOperationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CompareOperationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CuadradoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CuadradoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RectanguloTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RectanguloTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/CompareOperationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/CompareOperationTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Circulo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            <state relative-caret-position="51">
+              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -44,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Comparador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="119">
               <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
               <folding>
                 <element signature="e#116#117#0" expanded="true" />
@@ -66,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CirculoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
+            <state relative-caret-position="1003">
               <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -78,7 +71,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RectanguloTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1088">
+            <state relative-caret-position="1037">
               <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -90,7 +83,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CuadradoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
+            <state relative-caret-position="527">
               <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -99,11 +92,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/CompareOperationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+            <state relative-caret-position="68">
+              <caret line="8" column="86" selection-start-line="8" selection-start-column="86" selection-end-line="8" selection-end-column="86" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,11 +162,11 @@
         <option value="$PROJECT_DIR$/src/test/java/CuadradoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/CirculoTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RectanguloTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Circulo.java" />
         <option value="$PROJECT_DIR$/src/main/java/Comparador.java" />
         <option value="$PROJECT_DIR$/src/main/java/Cuadrado.java" />
         <option value="$PROJECT_DIR$/src/main/java/Rectangulo.java" />
         <option value="$PROJECT_DIR$/src/test/java/CompareOperationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Circulo.java" />
       </list>
     </option>
   </component>
@@ -192,6 +188,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,12 +232,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551116756198" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551364625194" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/TestFigures-master/src/main/java/FigureElementNegative.java" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
@@ -260,7 +256,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.CompareOperationTest.ifFirstFigureAreaIsGreaterThanSecondOneReturnNumberGreaterThanZero">
+    <configuration name="CompareOperationTest.ifFirstFigureAreaIsGreaterThanSecondOneReturnNumberGreaterThanZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Testing_ejercicio_1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CompareOperationTest" />
+      <option name="METHOD_NAME" value="ifFirstFigureAreaIsGreaterThanSecondOneReturnNumberGreaterThanZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CompareOperationTest.ifFirstFigurePerimeterIsEqualToSecondOneReturnNumberZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Testing_ejercicio_1" />
       <option name="PACKAGE_NAME" value="" />
@@ -273,6 +279,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CompareOperationTest.ifFirstFigureAreaIsGreaterThanSecondOneReturnNumberGreaterThanZero" />
         <item itemvalue="JUnit.CompareOperationTest.ifFirstFigurePerimeterIsEqualToSecondOneReturnNumberZero" />
       </list>
     </recent_temporary>
@@ -407,11 +414,20 @@
     <history-entry file="CompareOperationTest_ifFirstFigurePerimeterIsEqualToSecondOneReturnNumberZero - 2019.02.25 at 18h 44m 18s.xml">
       <configuration name="CompareOperationTest.ifFirstFigurePerimeterIsEqualToSecondOneReturnNumberZero" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CompareOperationTest_ifFirstFigurePerimeterIsEqualToSecondOneReturnNumberZero - 2019.02.28 at 15h 35m 29s.xml">
+      <configuration name="CompareOperationTest.ifFirstFigurePerimeterIsEqualToSecondOneReturnNumberZero" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompareOperationTest_ifFirstFigureAreaIsGreaterThanSecondOneReturnNumberGreaterThanZero - 2019.02.28 at 15h 36m 46s.xml">
+      <configuration name="CompareOperationTest.ifFirstFigureAreaIsGreaterThanSecondOneReturnNumberGreaterThanZero" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CompareOperationTest_ifFirstFigureAreaIsGreaterThanSecondOneReturnNumberGreaterThanZero - 2019.02.28 at 15h 37m 05s.xml">
+      <configuration name="CompareOperationTest.ifFirstFigureAreaIsGreaterThanSecondOneReturnNumberGreaterThanZero" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17583893" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18657719" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -421,15 +437,14 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32907802" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -438,6 +453,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Maven" order="8" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -479,26 +495,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FiguraABS.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/CuadradoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/CirculoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -508,25 +504,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Circulo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RectanguloTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1088">
-          <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Cuadrado.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        <state relative-caret-position="51">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -539,7 +518,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Comparador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="119">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
           <folding>
             <element signature="e#116#117#0" expanded="true" />
@@ -548,10 +527,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Cuadrado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CirculoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="60" column="35" selection-start-line="60" selection-start-column="35" selection-end-line="60" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RectanguloTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="64" column="53" selection-start-line="64" selection-start-column="53" selection-end-line="64" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/CuadradoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/CompareOperationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        <state relative-caret-position="68">
+          <caret line="8" column="86" selection-start-line="8" selection-start-column="86" selection-end-line="8" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
